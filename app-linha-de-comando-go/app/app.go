@@ -11,8 +11,10 @@ import (
 // Vai retornar o app pronto para execução
 func Gerar() *cli.App {
 	app := cli.NewApp()
+	// Informações
 	app.Name = "App de Linha de Comando"
 	app.Usage = "Busca IPs e Nomes de Servidores"
+	app.Version = "0.0.0"
 
 	// delcaração das flags
 	flags := []cli.Flag{
